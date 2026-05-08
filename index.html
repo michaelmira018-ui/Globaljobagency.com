@@ -1,93 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Global Job Agency</title>
-
-  <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cirrus Global Clone</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
 
-<header>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">Cirrus Global Inc</div>
 
-<div class="logo">
-Global Job Agency
-</div>
+    <nav class="nav">
+      <a href="#">Find Jobs</a>
+      <a href="#">Hire Talent</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-<nav>
-<a href="#">Home</a>
-<a href="#">Jobs</a>
-<a href="#">Services</a>
-<a href="#">Contact</a>
-</nav>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>The #1 Overseas Recruitment Agency</h1>
+    <p>Transforming lives, one great job opportunity at a time</p>
 
-</header>
+    <div class="search-box">
+      <input type="text" placeholder="Enter job title..." />
+      <select>
+        <option>All Industries</option>
+      </select>
+      <select>
+        <option>All Countries</option>
+      </select>
+      <button onclick="searchJobs()">Search Jobs</button>
+    </div>
+  </section>
 
-<section class="hero">
+  <!-- STATS -->
+  <section class="stats">
+    <div>200+ Partner Companies</div>
+    <div>3500+ Successful Placements</div>
+    <div>98% Retention Rate</div>
+  </section>
 
-<div class="hero-content">
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>Your Success Partner</h2>
+    <p>
+      We connect Filipino talent with worldwide opportunities built on trust,
+      care, professionalism, and support from start to finish.
+    </p>
+  </section>
 
-<h1>
-Find Your Dream Job Worldwide
-</h1>
+  <!-- WHY AUSTRALIA -->
+  <section class="features">
+    <h2>Why Work in Australia</h2>
 
-<p>
-Connecting workers with international opportunities.
-</p>
+    <div class="feature-grid">
+      <div>💰 High Earning Potential</div>
+      <div>🛡 Strong Worker Protections</div>
+      <div>📈 Career Growth</div>
+      <div>🌍 Quality of Life</div>
+    </div>
+  </section>
 
-<button onclick="showMessage()">
-Apply Now
-</button>
+  <!-- JOBS -->
+  <section class="jobs">
+    <h2>Recently Posted Jobs</h2>
 
-</div>
+    <div class="job-card">
+      <h3>Floor Finishers (Epoxy Specialist)</h3>
+      <p>Australia</p>
+      <button>Apply Now</button>
+    </div>
 
-</section>
+    <div class="job-card">
+      <h3>Blaster Painters</h3>
+      <p>Australia</p>
+      <button>Apply Now</button>
+    </div>
 
-<section class="services-section">
+    <div class="job-card">
+      <h3>Carpenters</h3>
+      <p>Australia</p>
+      <button>Apply Now</button>
+    </div>
+  </section>
 
-<h2>
-Our Services
-</h2>
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <h2>Stay Updated</h2>
+    <input type="email" placeholder="Enter your email" />
+    <button>Subscribe</button>
+  </section>
 
-<div class="services">
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Cirrus Global Inc. All rights reserved.</p>
+  </footer>
 
-<div class="card">
-<h3>International Jobs</h3>
-
-<p>
-Jobs in Canada, UAE, Europe and more.
-</p>
-</div>
-
-<div class="card">
-<h3>Visa Assistance</h3>
-
-<p>
-Support for visa and work permit processing.
-</p>
-</div>
-
-<div class="card">
-<h3>Career Support</h3>
-
-<p>
-CV writing and interview preparation help.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<footer>
-© 2026 Global Job Agency
-</footer>
-
-<script src="index.js"></script>
-
+  <script src="index.js"></script>
 </body>
-  </html>
+</html>
