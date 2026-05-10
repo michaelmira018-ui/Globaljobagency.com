@@ -227,8 +227,8 @@ body{
 
 /* COMPANY LOGO IMAGE */
 .company-logo{
-  width:15px;
-  height:15px;
+  width:20px;
+  height:20px;
   border-radius:50%;
   object-fit:cover;
   background:white;
