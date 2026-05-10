@@ -12,3 +12,13 @@ document.querySelector(".newsletter button").addEventListener("click", function 
     alert("Please enter an email.");
   }
 });
+
+function searchJobs() {
+  alert("Searching available jobs...");
+}
+
+/* SIDEBAR MENU */
+function toggleMenu() {
+  const nav = document.getElementById("navMenu");
+  nav.classList.toggle("active");
+}
