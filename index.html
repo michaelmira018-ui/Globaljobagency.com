@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cirrus Global Clone</title>
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
   <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -11,30 +16,96 @@
 
   <!-- HEADER -->
   <header class="header">
-    <div class="logo">Cirrus Global Inc</div>
 
-    <nav class="nav">
+    <!-- LOGO -->
+    <a href="https://www.cirrusglobalinc.com/" class="logo-link">
+      <div class="logo">Cirrus Global Inc</div>
+    </a>
+
+    <!-- MENU ICON -->
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="nav" id="navMenu">
       <a href="#">Find Jobs</a>
       <a href="#">Hire Talent</a>
+      <a href="#">Industries</a>
+      <a href="#">Countries</a>
+      <a href="#">Gallery</a>
+      <a href="#">Videos</a>
       <a href="#">About</a>
       <a href="#">Contact</a>
     </nav>
+
   </header>
 
   <!-- HERO -->
   <section class="hero">
     <h1>The #1 Overseas Recruitment Agency</h1>
-    <p>Transforming lives, one great job opportunity at a time</p>
+
+    <p>
+      Transforming lives, one great job opportunity at a time
+    </p>
 
     <div class="search-box">
+
       <input type="text" placeholder="Enter job title..." />
+
+      <!-- INDUSTRIES -->
       <select>
         <option>All Industries</option>
+        <option>Construction</option>
+        <option>Healthcare</option>
+        <option>Hospitality</option>
+        <option>Engineering</option>
+        <option>Information Technology</option>
+        <option>Manufacturing</option>
+        <option>Agriculture</option>
+        <option>Logistics</option>
+        <option>Oil & Gas</option>
+        <option>Education</option>
+        <option>Automotive</option>
+        <option>Mining</option>
+        <option>Security Services</option>
+        <option>Food Services</option>
+        <option>Retail</option>
       </select>
+
+      <!-- COUNTRIES -->
       <select>
         <option>All Countries</option>
+
+        <!-- ASIA -->
+        <option>Japan</option>
+        <option>South Korea</option>
+        <option>Singapore</option>
+        <option>Malaysia</option>
+        <option>United Arab Emirates</option>
+        <option>Qatar</option>
+        <option>Saudi Arabia</option>
+
+        <!-- EUROPE -->
+        <option>Germany</option>
+        <option>United Kingdom</option>
+        <option>France</option>
+        <option>Italy</option>
+        <option>Netherlands</option>
+
+        <!-- AMERICA -->
+        <option>United States</option>
+        <option>Canada</option>
+        <option>Brazil</option>
+        <option>Mexico</option>
+
+        <!-- OTHER -->
+        <option>Australia</option>
+        <option>New Zealand</option>
       </select>
+
       <button onclick="searchJobs()">Search Jobs</button>
+
     </div>
   </section>
 
@@ -48,26 +119,32 @@
   <!-- ABOUT -->
   <section class="about">
     <h2>Your Success Partner</h2>
+
     <p>
       We connect Filipino talent with worldwide opportunities built on trust,
       care, professionalism, and support from start to finish.
     </p>
   </section>
 
-  <!-- WHY AUSTRALIA -->
+  <!-- FEATURES -->
   <section class="features">
-    <h2>Why Work in Australia</h2>
+
+    <h2>Why Work Abroad</h2>
 
     <div class="feature-grid">
       <div>💰 High Earning Potential</div>
       <div>🛡 Strong Worker Protections</div>
       <div>📈 Career Growth</div>
-      <div>🌍 Quality of Life</div>
+      <div>🌍 Better Quality of Life</div>
+      <div>🏠 Family Support Opportunities</div>
+      <div>🎓 International Experience</div>
     </div>
+
   </section>
 
   <!-- JOBS -->
   <section class="jobs">
+
     <h2>Recently Posted Jobs</h2>
 
     <div class="job-card">
@@ -87,20 +164,164 @@
       <p>Australia</p>
       <button>Apply Now</button>
     </div>
+
+    <div class="job-card">
+      <h3>Caregivers</h3>
+      <p>Canada</p>
+      <button>Apply Now</button>
+    </div>
+
+    <div class="job-card">
+      <h3>Hotel Staff</h3>
+      <p>United Arab Emirates</p>
+      <button>Apply Now</button>
+    </div>
+
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section class="gallery">
+
+    <h2>Photo Gallery</h2>
+
+    <div class="gallery-grid">
+
+      <a href="https://images.unsplash.com/photo-1521791136064-7986c2920216">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=500"
+        alt="Workers">
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
+        alt="Office">
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1497366754035-f200968a6e72">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=500"
+        alt="Team">
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- VIDEOS -->
+  <section class="videos">
+
+    <h2>Recruitment Videos</h2>
+
+    <div class="video-grid">
+
+      <iframe width="350" height="220"
+      src="https://www.youtube.com/embed/tgbNymZ7vqY"
+      title="YouTube video"
+      allowfullscreen></iframe>
+
+      <iframe width="350" height="220"
+      src="https://www.youtube.com/embed/ysz5S6PUM-U"
+      title="YouTube video"
+      allowfullscreen></iframe>
+
+    </div>
+
+  </section>
+
+  <!-- INDUSTRIES LIST -->
+  <section class="industries">
+
+    <h2>Industries We Serve</h2>
+
+    <div class="industry-list">
+      <span>Construction</span>
+      <span>Healthcare</span>
+      <span>Engineering</span>
+      <span>Hospitality</span>
+      <span>Manufacturing</span>
+      <span>IT Services</span>
+      <span>Agriculture</span>
+      <span>Food Processing</span>
+      <span>Mining</span>
+      <span>Logistics</span>
+      <span>Retail</span>
+      <span>Oil & Gas</span>
+      <span>Education</span>
+      <span>Automotive</span>
+      <span>Marine Services</span>
+    </div>
+
   </section>
 
   <!-- NEWSLETTER -->
   <section class="newsletter">
+
     <h2>Stay Updated</h2>
+
     <input type="email" placeholder="Enter your email" />
+
     <button>Subscribe</button>
+
+  </section>
+
+  <!-- EXTRA DETAILS -->
+  <section class="extra-details">
+
+    <h2>Why Choose Us</h2>
+
+    <p>
+      Our agency provides trusted overseas employment opportunities with
+      transparent recruitment processes, visa assistance, interview support,
+      employer matching, and worker welfare programs.
+    </p>
+
+    <p>
+      We partner with international employers across Australia, Canada,
+      Europe, Asia, and the Middle East to provide quality jobs for skilled
+      workers worldwide.
+    </p>
+
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
+
+    <h3>Cirrus Global Inc</h3>
+
+    <p>Email: info@cirrusglobal.com</p>
+
+    <p>Phone: +63 900 000 0000</p>
+
+    <p>Address: Manila, Philippines</p>
+
+    <!-- SOCIAL MEDIA -->
+    <div class="social-links">
+
+      <a href="https://facebook.com" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+
+      <a href="https://instagram.com" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="https://youtube.com" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+
+      <a href="https://linkedin.com" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a href="https://tiktok.com" target="_blank">
+        <i class="fab fa-tiktok"></i>
+      </a>
+
+    </div>
+
     <p>© 2026 Cirrus Global Inc. All rights reserved.</p>
+
   </footer>
 
   <script src="index.js"></script>
+
 </body>
-</html>
+                             </html>
