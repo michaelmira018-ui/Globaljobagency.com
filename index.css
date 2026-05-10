@@ -226,14 +226,14 @@ body{
 }
 
 /* COMPANY LOGO IMAGE */
-.company-logo{
-  width:25px;
-  height:25px;
-  border-radius:50%;
-  object-fit:cover;
-  background:white;
-}
 
+.company-logo{
+  width:30px;
+  height:20px;
+  object-fit:cover;
+  border-radius:5px;
+  margin-left:-10px;
+}
 /* COMPANY NAME */
 .logo{
   color:white;
