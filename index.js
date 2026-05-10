@@ -32,11 +32,22 @@ document.addEventListener("click", function(event){
 
   const menuIcon = document.querySelector(".menu-icon");
 
-  if(
-    !nav.contains(event.target) &&
-    !menuIcon.contains(event.target)
-  ){
-    nav.classList.remove("active");
+  /* CHECK IF MENU IS OPEN */
+  if(nav.classList.contains("active")){
+
+    /* IF USER TAPS OUTSIDE MENU */
+    if(
+      !nav.contains(event.target) &&
+      !menuIcon.contains(event.target)
+    ){
+
+      /* CLOSE MENU */
+      nav.classList.remove("active");
+
+      /* STOP OTHER LINKS FROM OPENING */
+      event.preventDefault();
+      event.stopPropagation();
+    }
   }
 
-});
+}, true);
