@@ -125,3 +125,73 @@ body {
   background: #0b2c5f;
   color: white;
 }
+
+.menu-icon{
+  font-size:28px;
+  cursor:pointer;
+  display:none;
+  color:white;
+}
+
+.logo-link{
+  text-decoration:none;
+}
+
+.gallery-grid img{
+  width:300px;
+  border-radius:10px;
+  margin:10px;
+}
+
+.video-grid{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.industry-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+  justify-content:center;
+}
+
+.industry-list span{
+  background:#0d6efd;
+  color:white;
+  padding:10px 15px;
+  border-radius:5px;
+}
+
+.social-links{
+  margin-top:15px;
+}
+
+.social-links a{
+  color:white;
+  margin:0 10px;
+  font-size:24px;
+}
+
+@media(max-width:768px){
+
+  .menu-icon{
+    display:block;
+  }
+
+  .nav{
+    display:none;
+    flex-direction:column;
+    background:#111;
+    position:absolute;
+    top:70px;
+    right:0;
+    width:220px;
+    padding:20px;
+  }
+
+  .nav.active{
+    display:flex;
+  }
+}
